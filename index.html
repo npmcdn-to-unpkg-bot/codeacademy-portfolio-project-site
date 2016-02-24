@@ -12,12 +12,8 @@
     <meta name="author" content="">
 
     <title>Codeacademy Project Portfolio</title>
-
-    <!-- Bootstrap Core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://bootswatch.com/united/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
+    <link href="https://bootswatch.com/spacelab/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 
 </head>
@@ -34,7 +30,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Codeacademy Project Portfolio</a>
+                <a class="navbar-brand" href="index.html">Codeacademy Project Portfolio</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -42,9 +38,7 @@
                     <li>
                         <a href="about.html">About</a>
                     </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
+                  
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -53,38 +47,44 @@
     </nav>
 
     <!-- Full Width Image Header -->
-    <header class="header-image">
+    <header class="header-image" id="sky">
         <div class="headline">
             <div class="container">
-                <h1>One Page Wonder</h1>
-                <h2>Will Knock Your Socks Off</h2>
+                <h1 id="my-shine-object">Codeacademy Projects</h1>
+                <h2 id="my-shine-object">Showing off all my final projects</h2>
             </div>
         </div>
     </header>
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container scrollme">
 
         <hr class="featurette-divider">
 
         <!-- First Featurette -->
-        <div class="featurette" id="about">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
-            <h2 class="featurette-heading">This First Heading
-                <span class="text-muted">Will Catch Your Eye</span>
+        <div class="featurette animateme" id="about"data-when="enter"
+        data-from="0.5"
+        data-to="0"
+        data-opacity="0"
+        data-translatex="-200"
+        data-rotatez="90">
+            <img class="featurette-image img-circle img-responsive pull-right" src="http://static.tumblr.com/6e35e391a99d92051bf5a6e289809a07/02nxold/lfznyt5s6/tumblr_static_dl9xutmk8jcw0kgcok888g8gw.png" width="400" height="400">
+            <h2 class="featurette-heading"> JavaScript Final Project
+                <span class="text-muted">  a game based on decisions</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">This game is based on the cartoon show Steven Universe. It is built with core JavaScript concepts in mind such as control flow statements, object oriented programming, and model view controller.</p>
+            <a class="navbar-brand" href="game.html">Play Game</a>
         </div>
 
         <hr class="featurette-divider">
 
         <!-- Second Featurette -->
         <div class="featurette" id="services">
-            <img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/500x500">
-            <h2 class="featurette-heading">The Second Heading
-                <span class="text-muted">Is Pretty Cool Too.</span>
+            <img class="featurette-image img-circle img-responsive pull-left" src="img/projectjquery.png" width="400" height="400">
+            <h2 class="featurette-heading">HTML CSS JQuery Final Project
+                <span class="text-muted"> take a look around you</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">The website itself is away to host all my final projects completed on Codecedmy the design and funcitonality of this site is based on the final projects of the HTML/CSS & JQuery courses.</p>
         </div>
 
         <hr class="featurette-divider">
@@ -92,10 +92,10 @@
         <!-- Third Featurette -->
         <div class="featurette" id="contact">
             <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
-            <h2 class="featurette-heading">The Third Heading
-                <span class="text-muted">Will Seal the Deal.</span>
+            <h2 class="featurette-heading">Angular Final Project
+                <span class="text-muted"> getting a head of the curve</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">Coming soon...</p>
         </div>
 
         <hr class="featurette-divider">
@@ -104,22 +104,17 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; Your Website 2016</p>
                 </div>
             </div>
         </footer>
 
     </div>
-    <!-- /.container -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+    <script src="https://npmcdn.com/masonry-layout@4.0.0/dist/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.scrollme.min"></script>
+    <script src="js/jquery.jqlouds.min.js"></script>
+    <script src="js/shine.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
-
-</body>
-
 </html>
