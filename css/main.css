@@ -29,7 +29,8 @@ body {
     z-index:999999;
   
 }
-
+.shine-word{z-index: 99999999;}
+.shine-letter{z-index:99999999;}
 .headline h2 {
     font-size: 55px;
      z-index:999999;
@@ -179,4 +180,7 @@ footer {
         margin-bottom: 10px;
         margin-left: 0;
     }
+}
+ul{
+    list-style-type: none;
 }
