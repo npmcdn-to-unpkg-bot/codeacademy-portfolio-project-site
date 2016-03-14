@@ -29,7 +29,7 @@ body {
     z-index:999999;
   
 }
-.shine-word{z-index: 99999999;}
+.shine-word{z-index: 99999999;color:yellow;}
 .shine-letter{z-index:99999999;}
 .headline h2 {
     font-size: 55px;

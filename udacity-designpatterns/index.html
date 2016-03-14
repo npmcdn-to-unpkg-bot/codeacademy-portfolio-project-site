@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .list-position{
+        font-size: 20px;
+        float:right !important;
+      }
+      #map{
+        height:100%;
+        margin-top:-375px;
+      }
+      #search-input{
+        width:300px;
+        display:inline;
+      }
+      .test-div{
+     margin-left: 1000px;
+    position: absolute;
+    
+    border: 1px solid black;
+    z-index: 2;
+      }
+      .fixed-position{
+        position:relative;
+        z-index: 2;
+      }
+    </style>
+    <title>Places I Frequently Go</title>
+  </head>
+  <body>
+  <div class="row fixed-position">
+      <div class="col s1 m3">
+        <div class="card-panel teal">
+          <span class="white-text">
+          <p> Search for an item on the list<br>
+          click on marker to view the place</p>
+          <ul data-bind="foreach: placeList">
+            <li data-bind="text:name"><p data-bind="text:address"></p></li>
+            <li id="placeaddress"></li>
+          </ul>
+          </span>
+        </div>
+        <div class="col s4 m4">
+        <form id="search-form" data-bind="submit: search">
+                <input id="search-input" data-bind="value: query" placeholder="Search..." autofocus /></br>
+                <button id="search-btn" type="submit">Submit</button>
+              
+          </form>
+          </div>
+      </div>
+    </div>
+             
+          <div class="test-div"></div>
+          </br>
+    <div id="map"></div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
+      <!--<script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoumLD10_TeJbl9MvM17MEZ1Lbrg-tfkI&callback=initMap">
+    </script>-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    <script src="js/maps.js"></script>
+  </body>
+</html>`
