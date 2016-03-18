@@ -1,0 +1,25 @@
+{
+  "name": "buildingblocks",
+  "version": "1.0.0",
+  "description": "express for beginners",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/ptums"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "peter",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "supertest": "^1.2.0"
+  }
+}
