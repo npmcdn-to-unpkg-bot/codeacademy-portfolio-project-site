@@ -184,3 +184,12 @@ footer {
 ul{
     list-style-type: none;
 }
+#course-completion img{
+    border:1px solid black;
+    width: 70%;
+ }
+ #course-completion li{
+     padding:10px;
+     float:left;
+
+ }  
