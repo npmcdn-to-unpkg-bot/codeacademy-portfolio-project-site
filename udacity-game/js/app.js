@@ -9,7 +9,7 @@ var Enemy = function() {
   this.speed = NewEnemySpeed[Math.floor(Math.random() * 7)];
     // The image/sprite for our enemies, this uses
     // a helper we've provided to easily load images
-    this.sprite = 'images/enemy-bug.png';
+    this.sprite = 'udacity-game/images/enemy-bug.png';
 };
 
 // Update the enemy's position, required method for game
@@ -65,7 +65,7 @@ Enemy.prototype.render = function() {
 // This class requires an update(), render() and
 // a handleInput() method.
 var Player = function() {
-  this.sprite = 'images/char-boy.png';
+  this.sprite = 'udacity-game/images/char-boy.png';
   this.x = 404;
   this.y = 392;
 }
@@ -98,7 +98,7 @@ Player.prototype.reset = function() {
 }
 //Creating a Gem Class
 var Gem = function(){
-    this.sprite = 'images/gem-blue.png';
+    this.sprite = 'udacity-game/images/gem-blue.png';
     this.x = 50;
     this.y = 200;
      
